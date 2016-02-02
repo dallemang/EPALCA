@@ -1,0 +1,186 @@
+# baseURI: http://www.example.org/lcamin
+
+@prefix lcamin: <http://www.example.org/lcamin#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.org/lcamin>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+lcamin:Activity
+  rdf:type owl:Class ;
+  rdfs:comment "The hasProperty restriction just indicates that an Activity may have Properties."^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty rdfs:hasProperty ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcamin:hasLocation ;
+    ] ;
+.
+lcamin:Agent
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcamin:hasLocation ;
+    ] ;
+.
+lcamin:Compartment
+  rdf:type owl:Class ;
+  rdfs:comment "A compartment within the environment, such as air, water, etc."^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcamin:ElementaryFlow
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcamin:Flow ;
+  owl:disjointWith lcamin:IntermediateFlow ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          lcamin:ElementaryInputFlow
+          lcamin:ElementaryOutputFlow
+        ) ;
+    ] ;
+  owl:equivalentClass [
+      rdf:type owl:Restriction ;
+      owl:onProperty lcamin:hasSource ;
+      owl:someValuesFrom lcamin:Compartment ;
+    ] ;
+.
+lcamin:ElementaryInputFlow
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcamin:ElementaryFlow ;
+  owl:equivalentClass [
+      rdf:type owl:Restriction ;
+      owl:onProperty lcamin:hasSource ;
+      owl:someValuesFrom lcamin:Compartment ;
+    ] ;
+.
+lcamin:ElementaryOutputFlow
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcamin:ElementaryFlow ;
+  owl:equivalentClass [
+      rdf:type owl:Restriction ;
+      owl:onProperty lcamin:hasDestination ;
+      owl:someValuesFrom lcamin:Compartment ;
+    ] ;
+.
+lcamin:Facility
+  rdf:type owl:Class ;
+  rdfs:comment "This class serves as a bridge to the FRS ontology"^^xsd:string ;
+  rdfs:subClassOf lcamin:Agent ;
+.
+lcamin:Flow
+  rdf:type owl:Class ;
+  rdfs:comment "The hasProperty restriction just indicates that a Flow may have Properties."^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty rdfs:hasProperty ;
+    ] ;
+.
+lcamin:IntermediateFlow
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcamin:Flow ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:intersectionOf (
+          [
+            rdf:type owl:Restriction ;
+            owl:onProperty lcamin:hasSource ;
+            owl:someValuesFrom lcamin:Activity ;
+          ]
+          [
+            rdf:type owl:Restriction ;
+            owl:onProperty lcamin:hasDestination ;
+            owl:someValuesFrom lcamin:Activity ;
+          ]
+        ) ;
+    ] ;
+.
+lcamin:Location
+  rdf:type owl:Class ;
+  rdfs:comment "This class serves as a bridge to a TBD location ontology, possibly vCard"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcamin:Product
+  rdf:type owl:Class ;
+  rdfs:comment "A Flow into the technosphere, i.e., not into an Activity, and not into the environment (Compartments)."^^xsd:string ;
+  rdfs:subClassOf lcamin:Flow ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:complementOf [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              lcamin:ElementaryFlow
+              lcamin:IntermediateFlow
+            ) ;
+        ] ;
+    ] ;
+.
+lcamin:Property
+  rdf:type owl:Class ;
+  rdfs:comment "This class serves as a bridge to the Property class in the GeoLink PropertyValue ontology, http://schema.geolink.org/dev/pattern/propertyvalue.owl."^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcamin:ReferenceProduct
+  rdf:type owl:Class ;
+  rdfs:comment "If an Activity produces more than one Product, the ReferenceProduct is the primary one."^^xsd:string ;
+  rdfs:subClassOf lcamin:Product ;
+.
+lcamin:TemporalExtent
+  rdf:type owl:Class ;
+  rdfs:comment "This class represents a time interval and serves as a bridge to a TBD temporal ontology"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcamin:hasCompartment
+  rdf:type owl:ObjectProperty ;
+  rdfs:range lcamin:Compartment ;
+.
+lcamin:hasDestination
+  rdf:type owl:FunctionalProperty ;
+  rdfs:comment "A more abstract version of isInputOf (which only refers to inputs of Activities). This allows us to refer to the environment (a Compartment) or the technosphere as the destination of a Flow."^^xsd:string ;
+.
+lcamin:hasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:range lcamin:Location ;
+.
+lcamin:hasSource
+  rdf:type owl:FunctionalProperty ;
+  rdfs:comment "A more abstract version of isOutputOf (which only refers to outputs of Activities). This allows us to refer to the environment (a Compartment) as the source of a Flow."^^xsd:string ;
+.
+lcamin:hasTemporalExtent
+  rdf:type owl:ObjectProperty ;
+  rdfs:range lcamin:TemporalExtent ;
+.
+lcamin:isInputOf
+  rdf:type owl:FunctionalProperty ;
+  rdfs:comment "Means the same as hasDestination, but the destination must be an Activity."^^xsd:string ;
+  rdfs:range lcamin:Activity ;
+  rdfs:subPropertyOf lcamin:hasDestination ;
+.
+lcamin:isOutputOf
+  rdf:type rdf:Property ;
+  rdfs:comment "Means the same as hasSource, but the source must be an Activity."^^xsd:string ;
+  rdfs:range lcamin:Activity ;
+  rdfs:subPropertyOf lcamin:hasSource ;
+.
+lcamin:performs
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lcamin:Agent ;
+  rdfs:range lcamin:Activity ;
+.
+rdfs:hasProperty
+  rdf:type owl:ObjectProperty ;
+  rdfs:range lcamin:Property ;
+.
