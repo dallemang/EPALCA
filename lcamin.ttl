@@ -162,6 +162,14 @@ lcamin:hasDestination
   rdf:type owl:FunctionalProperty ;
   rdfs:comment "A more abstract version of isInputOf (which only refers to inputs of Activities). This allows us to refer to the environment (a Compartment) or the technosphere as the destination of a Flow."^^xsd:string ;
   rdfs:domain lcamin:Flow ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          lcamin:Activity
+          lcamin:Compartment
+          lcamin:Product
+        ) ;
+    ] ;
 .
 lcamin:hasLocation
   rdf:type owl:ObjectProperty ;
@@ -171,6 +179,13 @@ lcamin:hasSource
   rdf:type owl:FunctionalProperty ;
   rdfs:comment "A more abstract version of isOutputOf (which only refers to outputs of Activities). This allows us to refer to the environment (a Compartment) as the source of a Flow."^^xsd:string ;
   rdfs:domain lcamin:Flow ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          lcamin:Activity
+          lcamin:Compartment
+        ) ;
+    ] ;
 .
 lcamin:hasTemporalExtent
   rdf:type owl:ObjectProperty ;
