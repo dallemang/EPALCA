@@ -42,7 +42,8 @@ lcamin:Agent
 .
 lcamin:Compartment
   rdf:type owl:Class ;
-  rdfs:comment "A compartment within the environment, such as air, water, etc."^^xsd:string ;
+  rdfs:comment "A raw material that comes directly from  the environment."^^xsd:string ;
+  rdfs:comment "For example:  air, water, etc."^^xsd:string ;
   rdfs:subClassOf owl:Thing ;
 .
 lcamin:ElementaryFlow
