@@ -1,4 +1,5 @@
 # baseURI: http://www.example.org/lcamin
+# prefix: lcamin
 
 @prefix lcamin: <http://www.example.org/lcamin#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -54,11 +55,6 @@ lcamin:ElementaryFlow
           lcamin:ElementaryInputFlow
           lcamin:ElementaryOutputFlow
         ) ;
-    ] ;
-  owl:equivalentClass [
-      rdf:type owl:Restriction ;
-      owl:onProperty lcamin:hasSource ;
-      owl:someValuesFrom lcamin:Compartment ;
     ] ;
 .
 lcamin:ElementaryInputFlow
