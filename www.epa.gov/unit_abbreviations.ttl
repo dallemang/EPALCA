@@ -1,0 +1,25 @@
+# baseURI: http://www.epa.gov/unit_abbreviations
+# imports: http://qudt.org/vocab/unit
+# prefix: unit_abbreviations
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit_abbreviations: <http://www.epa.gov/unit_abbreviations#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://qudt.org/vocab/unit#PoundMass>
+  qudt:abbreviation "LB" ;
+  qudt:abbreviation "LB." ;
+  qudt:abbreviation "lb" ;
+  qudt:abbreviation "lb." ;
+.
+<http://qudt.org/vocab/unit#TonShort>
+  qudt:abbreviation "TON"^^xsd:string ;
+.
+<http://www.epa.gov/unit_abbreviations>
+  rdf:type owl:Ontology ;
+  owl:imports <http://qudt.org/vocab/unit> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.

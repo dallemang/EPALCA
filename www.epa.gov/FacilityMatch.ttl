@@ -1,0 +1,303 @@
+# baseURI: http://www.epa.gov/FacilityMatch
+
+@prefix : <http://www.epa.gov/FacilityMatch#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.epa.gov/FacilityMatch>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Spreadsheet converter"^^xsd:string ;
+.
+:BAESYSTEMSHOLDINGSINC
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "43,797,056"^^xsd:string ;
+  :dMR2011 "Yes"^^xsd:string ;
+  :eISID_1 "3811611"^^xsd:string ;
+  :eISID_2 "5018911"^^xsd:string ;
+  :eggrtID "527084"^^xsd:string ;
+  :gHGRP2011 "Yes"^^xsd:string ;
+  :gHRPID "1004720"^^xsd:string ;
+  :handlerIDRCRAInfo "TN5210020421�"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "TNR053962"^^xsd:string ;
+  :pARENTCOMPANY "BAE SYSTEMS HOLDINGS INC"^^xsd:string ;
+  :pRODUCTIONRANK "1"^^xsd:string ;
+  :rCRAInfo2011 "No"^^xsd:string ;
+  :sITEADDRESS "4509 WEST STONE DRIVE"^^xsd:string ;
+  :sITECITY "KINGSPORT"^^xsd:string ;
+  :sITENAME "US ARMY HOLSTON ARMY AMMUNITION PLANT"^^xsd:string ;
+  :sITESTATE "TN"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "37660HLSTNWESTS"^^xsd:string ;
+  rdfs:label "BAE SYSTEMS HOLDINGS INC"^^xsd:string ;
+.
+:COMPASSCHEMICALINTERNATIONALLLC
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "10,459,423"^^xsd:string ;
+  :dMR2011 "No"^^xsd:string ;
+  :eISID_1 "3700911"^^xsd:string ;
+  :gHGRP2011 "No"^^xsd:string ;
+  :handlerIDRCRAInfo "GAR000033910"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :pARENTCOMPANY "COMPASS CHEMICAL INTERNATIONAL LLC"^^xsd:string ;
+  :pRODUCTIONRANK "4"^^xsd:string ;
+  :rCRAInfo2011 "Yes"^^xsd:string ;
+  :sITEADDRESS "5544 OAKDALE RD SE"^^xsd:string ;
+  :sITECITY "SMYRNA"^^xsd:string ;
+  :sITENAME "COMPASS CHEMICAL INTERNATIONAL LLC"^^xsd:string ;
+  :sITESTATE "GA"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "30082MYCHM5544O"^^xsd:string ;
+  rdfs:label "COMPASS CHEMICAL INTERNATIONAL LLC"^^xsd:string ;
+.
+:COVIDIEN
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "27,645,466"^^xsd:string ;
+  :dMR2011 "No"^^xsd:string ;
+  :eISID_1 "7923211"^^xsd:string ;
+  :fRSID "110000347214"^^xsd:string ;
+  :gHGRP2011 "No"^^xsd:string ;
+  :handlerIDRCRAInfo "NCD981756463"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "NCS000136"^^xsd:string ;
+  :nPDESID "NCS000136�"^^xsd:string ;
+  :pARENTCOMPANY "COVIDIEN"^^xsd:string ;
+  :pRODUCTIONRANK "2"^^xsd:string ;
+  :rCRAInfo2011 "No"^^xsd:string ;
+  :sITEADDRESS "8801 CAPITAL BLVD."^^xsd:string ;
+  :sITECITY "RALEIGH"^^xsd:string ;
+  :sITENAME "MALLINCKRODT INCORPORATED"^^xsd:string ;
+  :sITESTATE "NC"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "27604MLLNC8801N"^^xsd:string ;
+  rdfs:label "COVIDIEN"^^xsd:string ;
+.
+:DAKAMERICASLLC
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "11,400,000"^^xsd:string ;
+  :dMR2011 "Yes"^^xsd:string ;
+  :eISID_1 "8122511"^^xsd:string ;
+  :eggrtID "522726"^^xsd:string ;
+  :fRSID "110008647893"^^xsd:string ;
+  :gHGRP2011 "Yes"^^xsd:string ;
+  :gHRPID "1002099"^^xsd:string ;
+  :handlerIDRCRAInfo "NCD047369046"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "NCS000392"^^xsd:string ;
+  :nPDESID "NCS000392�"^^xsd:string ;
+  :pARENTCOMPANY "DAK AMERICAS LLC"^^xsd:string ;
+  :pRODUCTIONRANK "3"^^xsd:string ;
+  :rCRAInfo2011 "No"^^xsd:string ;
+  :sITEADDRESS "3500 DANIELS ROAD NORTHEAST"^^xsd:string ;
+  :sITECITY "LELAND"^^xsd:string ;
+  :sITENAME "DAK AMERICAS LLC CAPE FEAR SITE"^^xsd:string ;
+  :sITESTATE "NC"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "28451DPNT STATE"^^xsd:string ;
+  rdfs:label "DAK AMERICAS LLC"^^xsd:string ;
+.
+<http://www.epa.gov/FacilityMatch#DixieHoldingsInc.>
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "88,144"^^xsd:string ;
+  :dMR2011 "Yes"^^xsd:string ;
+  :eISID_1 "4862611"^^xsd:string ;
+  :eggrtID "534078"^^xsd:string ;
+  :gHGRP2011 "Yes"^^xsd:string ;
+  :gHRPID "1005947"^^xsd:string ;
+  :handlerIDRCRAInfo "TXD008088247�"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "TX0125644"^^xsd:string ;
+  :pARENTCOMPANY "Dixie Holdings, Inc."^^xsd:string ;
+  :pRODUCTIONRANK "8"^^xsd:string ;
+  :rCRAInfo2011 "Yes"^^xsd:string ;
+  :sITEADDRESS "10601 BAY AREA BLVD"^^xsd:string ;
+  :sITECITY "PASADENA"^^xsd:string ;
+  :sITENAME "DIXIE CHEMICAL PLANT B"^^xsd:string ;
+  :sITESTATE "TX"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "77507DXCHM10701"^^xsd:string ;
+  rdfs:label "\"Dixie Holdings, Inc.\""^^xsd:string ;
+.
+:GABRIELPERFORMANCE
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "1,200,000"^^xsd:string ;
+  :dMR2011 "Yes"^^xsd:string ;
+  :eISID_1 "8104311"^^xsd:string ;
+  :gHGRP2011 "No"^^xsd:string ;
+  :handlerIDRCRAInfo "OHD003913308"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "OH0029149�"^^xsd:string ;
+  :pARENTCOMPANY "GABRIEL PERFORMANCE"^^xsd:string ;
+  :pRODUCTIONRANK "6"^^xsd:string ;
+  :rCRAInfo2011 "Yes"^^xsd:string ;
+  :sITEADDRESS "725 STATE ROAD"^^xsd:string ;
+  :sITECITY "ASHTABULA"^^xsd:string ;
+  :sITENAME "GABRIEL PERFORMANCE PRODUCTS LLC"^^xsd:string ;
+  :sITESTATE "OH"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "44004CCDNT725ST"^^xsd:string ;
+  rdfs:label "GABRIEL PERFORMANCE"^^xsd:string ;
+.
+:MyClass
+  rdf:type owl:Class ;
+.
+:SOLVCHEMINC
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "4,314,360"^^xsd:string ;
+  :dMR2011 "No"^^xsd:string ;
+  :gHGRP2011 "No"^^xsd:string ;
+  :handlerIDRCRAInfo "TXR000000356�"^^xsd:string ;
+  :nEI2011 "No"^^xsd:string ;
+  :pARENTCOMPANY "SOLVCHEM INC"^^xsd:string ;
+  :pRODUCTIONRANK "5"^^xsd:string ;
+  :rCRAInfo2011 "No"^^xsd:string ;
+  :sITEADDRESS "4704 SHANK RD."^^xsd:string ;
+  :sITECITY "PEARLAND"^^xsd:string ;
+  :sITENAME "SOLVENTS & CHEMICALS"^^xsd:string ;
+  :sITESTATE "TX"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "77588SLVNT4704S"^^xsd:string ;
+  rdfs:label "SOLVCHEM INC"^^xsd:string ;
+.
+:THATCHERCO
+  rdf:type :MyClass ;
+  :aCETICACIDPRODUCEDLB "615,526"^^xsd:string ;
+  :dMR2011 "No"^^xsd:string ;
+  :eISID_1 "6979611"^^xsd:string ;
+  :gHGRP2011 "No"^^xsd:string ;
+  :handlerIDRCRAInfo "UTD041307356�"^^xsd:string ;
+  :nEI2011 "Yes"^^xsd:string ;
+  :nPDESID "UTR000125�"^^xsd:string ;
+  :pARENTCOMPANY "THATCHER CO"^^xsd:string ;
+  :pRODUCTIONRANK "7"^^xsd:string ;
+  :rCRAInfo2011 "No"^^xsd:string ;
+  :sITEADDRESS "1905 FORTUNE ROAD"^^xsd:string ;
+  :sITECITY "SALT LAKE CITY"^^xsd:string ;
+  :sITENAME "THATCHER CO"^^xsd:string ;
+  :sITESTATE "UT"^^xsd:string ;
+  :tRI2011 "Yes"^^xsd:string ;
+  :tRIID "84127THTCH1905F"^^xsd:string ;
+  rdfs:label "THATCHER CO"^^xsd:string ;
+.
+:aCETICACIDPRODUCEDLB
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "ACETIC ACID PRODUCED (LB)"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:dMR2011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "DMR 2011"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:eISID_1
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "EIS ID_1"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:eISID_2
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "EIS ID_2"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:eggrtID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "Eggrt ID"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:fRSID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "FRS ID"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:gHGRP2011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "GHGRP 2011"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:gHRPID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "GHRP ID"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:handlerIDRCRAInfo
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "Handler ID RCRAInfo"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:nEI2011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "NEI 2011"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:nPDESID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "NPDES ID"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:pARENTCOMPANY
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "PARENT COMPANY"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:pRODUCTIONRANK
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "PRODUCTION RANK"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:rCRAInfo2011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "RCRAInfo 2011"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:sITEADDRESS
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "SITE ADDRESS"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:sITECITY
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "SITE CITY"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:sITENAME
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "SITE NAME"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:sITESTATE
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "SITE STATE"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:tRI2011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "TRI 2011"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:tRIID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :MyClass ;
+  rdfs:label "TRI ID"^^xsd:string ;
+  rdfs:range xsd:string ;
+.

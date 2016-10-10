@@ -1,0 +1,19 @@
+# baseURI: http://www.epa.gov/FRS_XWALK
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.epa.gov/FRS_XWALK>
+  rdf:type sml:ImportTDB ;
+  sml:baseURI "http://www.epa.gov/FRS_XWALK" ;
+  sml:dataPath "FRS_XWALK.tdb.data" ;
+  sml:imports <http://www.w3.org/2004/02/skos/core> ;
+  sml:prefix "" ;
+.
+<http://www.epa.gov/FRS_XWALKconfig>
+  rdf:type owl:Ontology ;
+  owl:imports <http://topbraid.org/sparqlmotionlib> ;
+.

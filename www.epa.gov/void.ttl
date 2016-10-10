@@ -1,0 +1,34 @@
+################
+# FRS Void.ttl #
+################
+
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wv: <http://vocab.org/waiver/terms/norms> .        
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix : <http://opendata.epa.gov/frs/schema.ttl#> .
+
+:FRS a void:Dataset;
+    dcterms:title "US Environmental Protection Agency's (EPA) Facility Registry System (FRS)";
+    dcterms:description "RDF data version of the US Environmental Protection Agency's (EPA) Toxics Release Inventory (TRI)";
+    foaf:homepage <http://opendata.epa.gov/>;
+    foaf:page <http://www.epa.gov/enviro/html/fii/>;
+	dcterms:subject <http://dbpedia.org/page/Facility>;
+    dcterms:contributor :US_EPA;
+    dcterms:contributor :ThreeRoundStones;
+    dcterms:source <https://explore.data.gov/Geography-and-Environment/EPA-FRS-Facilities-Combined-File-CSV-Download-for-/f429-2mbt>;
+    dcterms:modified "2012-07-11"^^xsd:date;
+    .
+
+:US_EPA a foaf:Organization;
+    rdfs:label "US Environmental Protection Agency";
+    foaf:homepage <http://www.epa.gov/> .
+		
+:ThreeRoundStones a foaf:Organization;
+    rdfs:label "3 Round Stones Inc.";
+    foaf:homepage <http://3roundstones.com/> .

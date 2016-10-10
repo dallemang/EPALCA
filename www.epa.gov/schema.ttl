@@ -1,0 +1,40 @@
+# baseURI: http://opendata.epa.gov/oppt/lca/schema
+# imports: http://qudt.org/vocab/unit
+# prefix: fedlca
+
+@prefix fedlca: <http://opendata.epa.gov/oppt/lca/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://opendata.epa.gov/oppt/lca/schema>
+  rdf:type owl:Ontology ;
+  owl:imports <http://qudt.org/vocab/unit> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+fedlca:hasAirEmissions
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has air emissions"^^xsd:string ;
+.
+fedlca:hasMedium
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "hasMedium" ;
+.
+fedlca:hasSubstance
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasSubstance" ;
+.
+fedlca:hasValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "hasValue" ;
+.
+fedlca:hasYear
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "hasYear" ;
+.
+fedlca:uom
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "uom" ;
+.

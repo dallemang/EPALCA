@@ -1,0 +1,1895 @@
+# baseURI: http://www.epa.gov/emission-factors_nov_2015
+# imports: http://qudt.org/spin/unitconversion
+# prefix: ef
+
+@prefix ef: <http://www.epa.gov/emission-factors_nov_2015#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.epa.gov/discoverytool#mmBtu>
+  rdf:type qudt:EnergyAndWorkUnit ;
+  rdf:type qudt:NotUsedWithSIUnit ;
+  rdf:type qudt:ThermalEnergyUnit ;
+  qudt:abbreviation "mmBtu"^^xsd:string ;
+  qudt:conversionMultiplier "1000000"^^xsd:double ;
+  qudt:conversionOffset "0"^^xsd:double ;
+  qudt:description "Million BTUs"^^xsd:string ;
+  qudt:symbol "mmBtu"^^xsd:string ;
+  rdfs:label "mm btu"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015>
+  rdf:type owl:Ontology ;
+  owl:imports <http://qudt.org/spin/unitconversion> ;
+  owl:versionInfo "Created with TopBraid Spreadsheet converter"^^xsd:string ;
+.
+ef:AgriculturalByproducts
+  rdf:type ef:MyClass ;
+  ef:Fuel "Agricultural Byproducts"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "264"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "35"^^xsd:string ;
+  ef:kgCO2permmBtu "118.17"^^xsd:string ;
+  ef:kgCO2pershortton "975"^^xsd:string ;
+  ef:mmBtupershortton "8.25"^^xsd:string ;
+  rdfs:label "Agricultural Byproducts"^^xsd:string ;
+.
+ef:AnthraciteCoal
+  rdf:type ef:MyClass ;
+  ef:Fuel "Anthracite Coal"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "276"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "40"^^xsd:string ;
+  ef:kgCO2permmBtu "103.69"^^xsd:string ;
+  ef:kgCO2pershortton "2,602"^^xsd:string ;
+  ef:mmBtupershortton "25.09"^^xsd:string ;
+  rdfs:label "Anthracite Coal"^^xsd:string ;
+.
+ef:AsphaltandRoadOil
+  rdf:type ef:MyClass ;
+  ef:Fuel "Asphalt and Road Oil"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.47"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "75.36"^^xsd:string ;
+  ef:kgCO2pershortton "11.91"^^xsd:string ;
+  ef:mmBtupershortton "0.158"^^xsd:string ;
+  rdfs:label "Asphalt and Road Oil"^^xsd:string ;
+.
+ef:AviationGasoline
+  rdf:type ef:MyClass ;
+  ef:Fuel "Aviation Gasoline"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.36"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.07"^^xsd:string ;
+  ef:kgCO2permmBtu "69.25"^^xsd:string ;
+  ef:kgCO2pershortton "8.31"^^xsd:string ;
+  ef:mmBtupershortton "0.12"^^xsd:string ;
+  rdfs:label "Aviation Gasoline"^^xsd:string ;
+.
+ef:Bagasse
+  rdf:type ef:MyClass ;
+  ef:Fuel "Bagasse"^^xsd:string ;
+  ef:gCH4permmBtu "1.9"^^xsd:string ;
+  ef:gN2OpermmBtu "0.42"^^xsd:string ;
+  ef:kgCO2permmBtu "95.5"^^xsd:string ;
+  rdfs:label "Bagasse"^^xsd:string ;
+.
+ef:Bamboo
+  rdf:type ef:MyClass ;
+  ef:Fuel "Bamboo"^^xsd:string ;
+  ef:gCH4permmBtu "1.9"^^xsd:string ;
+  ef:gN2OpermmBtu "0.42"^^xsd:string ;
+  ef:kgCO2permmBtu "93.7"^^xsd:string ;
+  rdfs:label "Bamboo"^^xsd:string ;
+.
+ef:Biodiesel100
+  rdf:type ef:MyClass ;
+  ef:Fuel "Biodiesel (100%)"^^xsd:string ;
+  ef:gCH4permmBtu "1.1"^^xsd:string ;
+  ef:gCH4pershortton "0.14"^^xsd:string ;
+  ef:gN2OpermmBtu "0.11"^^xsd:string ;
+  ef:gN2Opershortton "0.01"^^xsd:string ;
+  ef:kgCO2permmBtu "73.84"^^xsd:string ;
+  ef:kgCO2pershortton "9.45"^^xsd:string ;
+  ef:mmBtupershortton "0.128"^^xsd:string ;
+  rdfs:label "Biodiesel (100%)"^^xsd:string ;
+.
+ef:BiomassFuelsGaseous
+  rdf:type ef:MyClass ;
+  ef:Fuel "Biomass Fuels (Gaseous)"^^xsd:string ;
+  rdfs:label "Biomass Fuels (Gaseous)"^^xsd:string ;
+.
+ef:BiomassFuelsKraftPulpingLiquorbyWoodFurnish
+  rdf:type ef:MyClass ;
+  ef:Fuel """ Biomass Fuels 
+(Kraft Pulping Liquor, by Wood Furnish) """^^xsd:string ;
+  rdfs:label """\" Biomass Fuels 
+(Kraft Pulping Liquor, by Wood Furnish) \""""^^xsd:string ;
+.
+ef:BiomassFuelsLiquid
+  rdf:type ef:MyClass ;
+  ef:Fuel "Biomass Fuels (Liquid)"^^xsd:string ;
+  rdfs:label "Biomass Fuels (Liquid)"^^xsd:string ;
+.
+ef:BiomassFuelsSolid
+  rdf:type ef:MyClass ;
+  ef:Fuel "Biomass Fuels (Solid)"^^xsd:string ;
+  rdfs:label "Biomass Fuels (Solid)"^^xsd:string ;
+.
+ef:BituminousCoal
+  rdf:type ef:MyClass ;
+  ef:Fuel "Bituminous Coal"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "274"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "40"^^xsd:string ;
+  ef:kgCO2permmBtu "93.28"^^xsd:string ;
+  ef:kgCO2pershortton "2,325"^^xsd:string ;
+  ef:mmBtupershortton "24.93"^^xsd:string ;
+  rdfs:label "Bituminous Coal"^^xsd:string ;
+.
+ef:BlastFurnaceGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Blast Furnace Gas"^^xsd:string ;
+  ef:gCH4permmBtu "0.022"^^xsd:string ;
+  ef:gCH4pershortton "0.000002"^^xsd:string ;
+  ef:gN2OpermmBtu "0.1"^^xsd:string ;
+  ef:gN2Opershortton "0.000009"^^xsd:string ;
+  ef:kgCO2permmBtu "274.32"^^xsd:string ;
+  ef:kgCO2pershortton "0.02524"^^xsd:string ;
+  ef:mmBtupershortton "0.000092"^^xsd:string ;
+  rdfs:label "Blast Furnace Gas"^^xsd:string ;
+.
+ef:Butane
+  rdf:type ef:MyClass ;
+  ef:Fuel "Butane"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.31"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.06"^^xsd:string ;
+  ef:kgCO2permmBtu "64.77"^^xsd:string ;
+  ef:kgCO2pershortton "6.67"^^xsd:string ;
+  ef:mmBtupershortton "0.103"^^xsd:string ;
+  rdfs:label "Butane"^^xsd:string ;
+.
+ef:Butylene
+  rdf:type ef:MyClass ;
+  ef:Fuel "Butylene"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.32"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.06"^^xsd:string ;
+  ef:kgCO2permmBtu "68.72"^^xsd:string ;
+  ef:kgCO2pershortton "7.22"^^xsd:string ;
+  ef:mmBtupershortton "0.105"^^xsd:string ;
+  rdfs:label "Butylene"^^xsd:string ;
+.
+ef:CoalCoke
+  rdf:type ef:MyClass ;
+  ef:Fuel "Coal Coke"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "273"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "40"^^xsd:string ;
+  ef:kgCO2permmBtu "113.67"^^xsd:string ;
+  ef:kgCO2pershortton "2,819"^^xsd:string ;
+  ef:mmBtupershortton "24.8"^^xsd:string ;
+  rdfs:label "Coal Coke"^^xsd:string ;
+.
+ef:CoalandCoke
+  rdf:type ef:MyClass ;
+  ef:Fuel "Coal and Coke"^^xsd:string ;
+  rdfs:label "Coal and Coke"^^xsd:string ;
+.
+ef:CokeOvenGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Coke Oven Gas"^^xsd:string ;
+  ef:gCH4permmBtu "0.48"^^xsd:string ;
+  ef:gCH4pershortton "0.000288"^^xsd:string ;
+  ef:gN2OpermmBtu "0.1"^^xsd:string ;
+  ef:gN2Opershortton "0.00006"^^xsd:string ;
+  ef:kgCO2permmBtu "46.85"^^xsd:string ;
+  ef:kgCO2pershortton "0.02806"^^xsd:string ;
+  ef:mmBtupershortton "0.000599"^^xsd:string ;
+  rdfs:label "Coke Oven Gas"^^xsd:string ;
+.
+ef:CrudeOil
+  rdf:type ef:MyClass ;
+  ef:Fuel "Crude Oil"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.41"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "74.54"^^xsd:string ;
+  ef:kgCO2pershortton "10.29"^^xsd:string ;
+  ef:mmBtupershortton "0.138"^^xsd:string ;
+  rdfs:label "Crude Oil"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015#DistillateFuelOilNo.1>
+  rdf:type ef:MyClass ;
+  ef:Fuel "Distillate Fuel Oil No. 1"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.42"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "73.25"^^xsd:string ;
+  ef:kgCO2pershortton "10.18"^^xsd:string ;
+  ef:mmBtupershortton "0.139"^^xsd:string ;
+  rdfs:label "Distillate Fuel Oil No. 1"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015#DistillateFuelOilNo.2>
+  rdf:type ef:MyClass ;
+  ef:Fuel "Distillate Fuel Oil No. 2"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.41"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "73.96"^^xsd:string ;
+  ef:kgCO2pershortton "10.21"^^xsd:string ;
+  ef:mmBtupershortton "0.138"^^xsd:string ;
+  rdfs:label "Distillate Fuel Oil No. 2"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015#DistillateFuelOilNo.4>
+  rdf:type ef:MyClass ;
+  ef:Fuel "Distillate Fuel Oil No. 4"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.44"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "75.04"^^xsd:string ;
+  ef:kgCO2pershortton "10.96"^^xsd:string ;
+  ef:mmBtupershortton "0.146"^^xsd:string ;
+  rdfs:label "Distillate Fuel Oil No. 4"^^xsd:string ;
+.
+ef:Ethane
+  rdf:type ef:MyClass ;
+  ef:Fuel "Ethane"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.2"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.04"^^xsd:string ;
+  ef:kgCO2permmBtu "59.6"^^xsd:string ;
+  ef:kgCO2pershortton "4.05"^^xsd:string ;
+  ef:mmBtupershortton "0.068"^^xsd:string ;
+  rdfs:label "Ethane"^^xsd:string ;
+.
+ef:Ethanol100
+  rdf:type ef:MyClass ;
+  ef:Fuel "Ethanol (100%)"^^xsd:string ;
+  ef:gCH4permmBtu "1.1"^^xsd:string ;
+  ef:gCH4pershortton "0.09"^^xsd:string ;
+  ef:gN2OpermmBtu "0.11"^^xsd:string ;
+  ef:gN2Opershortton "0.01"^^xsd:string ;
+  ef:kgCO2permmBtu "68.44"^^xsd:string ;
+  ef:kgCO2pershortton "5.75"^^xsd:string ;
+  ef:mmBtupershortton "0.084"^^xsd:string ;
+  rdfs:label "Ethanol (100%)"^^xsd:string ;
+.
+ef:Ethylene
+  rdf:type ef:MyClass ;
+  ef:Fuel "Ethylene"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.17"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.03"^^xsd:string ;
+  ef:kgCO2permmBtu "65.96"^^xsd:string ;
+  ef:kgCO2pershortton "3.83"^^xsd:string ;
+  ef:mmBtupershortton "0.058"^^xsd:string ;
+  rdfs:label "Ethylene"^^xsd:string ;
+.
+ef:Factor
+  rdf:type owl:Class ;
+  rdfs:label "Factor"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+ef:Fossil-derivedFuelsGaseous
+  rdf:type ef:MyClass ;
+  ef:Fuel "Fossil-derived Fuels (Gaseous)"^^xsd:string ;
+  rdfs:label "Fossil-derived Fuels (Gaseous)"^^xsd:string ;
+.
+ef:FossilFuel-derivedFuelsSolid
+  rdf:type ef:MyClass ;
+  ef:Fuel "Fossil Fuel-derived Fuels (Solid)"^^xsd:string ;
+  rdfs:label "Fossil Fuel-derived Fuels (Solid)"^^xsd:string ;
+.
+ef:Fuel
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "Fuel"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:FuelGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Fuel Gas"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.004164"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.000833"^^xsd:string ;
+  ef:kgCO2permmBtu "59"^^xsd:string ;
+  ef:kgCO2pershortton "0.08189"^^xsd:string ;
+  ef:mmBtupershortton "0.001388"^^xsd:string ;
+  rdfs:label "Fuel Gas"^^xsd:string ;
+.
+ef:HeavyGasOils
+  rdf:type ef:MyClass ;
+  ef:Fuel "Heavy Gas Oils"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.44"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "74.92"^^xsd:string ;
+  ef:kgCO2pershortton "11.09"^^xsd:string ;
+  ef:mmBtupershortton "0.148"^^xsd:string ;
+  rdfs:label "Heavy Gas Oils"^^xsd:string ;
+.
+ef:Instance
+  rdf:type ef:MyClass ;
+  ef:gCH4permmBtu "g CH4 per mmBtu"^^xsd:string ;
+  ef:gCH4pershortton "g CH4 per scf"^^xsd:string ;
+  ef:gN2OpermmBtu "g N2O per mmBtu"^^xsd:string ;
+  ef:gN2Opershortton "g N2O per scf"^^xsd:string ;
+  ef:kgCO2permmBtu "kg CO2 per mmBtu"^^xsd:string ;
+  ef:kgCO2pershortton "kg CO2 per scf"^^xsd:string ;
+  ef:mmBtupershortton "mmBtu per scf"^^xsd:string ;
+  rdfs:label ""^^xsd:string ;
+.
+ef:Instance0
+  rdf:type ef:MyClass ;
+  ef:gCH4permmBtu "g CH4 per mmBtu"^^xsd:string ;
+  ef:gCH4pershortton "g CH4 per gallon"^^xsd:string ;
+  ef:gN2OpermmBtu "g N2O per mmBtu"^^xsd:string ;
+  ef:gN2Opershortton "g N2O per gallon"^^xsd:string ;
+  ef:kgCO2permmBtu "kg CO2 per mmBtu"^^xsd:string ;
+  ef:kgCO2pershortton "kg CO2 per gallon"^^xsd:string ;
+  ef:mmBtupershortton "mmBtu per gallon"^^xsd:string ;
+  rdfs:label ""^^xsd:string ;
+.
+ef:Isobutane
+  rdf:type ef:MyClass ;
+  ef:Fuel "Isobutane"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.3"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.06"^^xsd:string ;
+  ef:kgCO2permmBtu "64.94"^^xsd:string ;
+  ef:kgCO2pershortton "6.43"^^xsd:string ;
+  ef:mmBtupershortton "0.099"^^xsd:string ;
+  rdfs:label "Isobutane"^^xsd:string ;
+.
+ef:Isobutylene
+  rdf:type ef:MyClass ;
+  ef:Fuel "Isobutylene"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.31"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.06"^^xsd:string ;
+  ef:kgCO2permmBtu "68.86"^^xsd:string ;
+  ef:kgCO2pershortton "7.09"^^xsd:string ;
+  ef:mmBtupershortton "0.103"^^xsd:string ;
+  rdfs:label "Isobutylene"^^xsd:string ;
+.
+ef:Kerosene
+  rdf:type ef:MyClass ;
+  ef:Fuel "Kerosene"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.41"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "75.2"^^xsd:string ;
+  ef:kgCO2pershortton "10.15"^^xsd:string ;
+  ef:mmBtupershortton "0.135"^^xsd:string ;
+  rdfs:label "Kerosene"^^xsd:string ;
+.
+ef:Kerosene-TypeJetFuel
+  rdf:type ef:MyClass ;
+  ef:Fuel "Kerosene-Type Jet Fuel"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.41"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "72.22"^^xsd:string ;
+  ef:kgCO2pershortton "9.75"^^xsd:string ;
+  ef:mmBtupershortton "0.135"^^xsd:string ;
+  rdfs:label "Kerosene-Type Jet Fuel"^^xsd:string ;
+.
+ef:LandfillGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Landfill Gas"^^xsd:string ;
+  ef:gCH4permmBtu "3.2"^^xsd:string ;
+  ef:gCH4pershortton "0.001552"^^xsd:string ;
+  ef:gN2OpermmBtu "0.63"^^xsd:string ;
+  ef:gN2Opershortton "0.000306"^^xsd:string ;
+  ef:kgCO2permmBtu "52.07"^^xsd:string ;
+  ef:kgCO2pershortton "0.025254"^^xsd:string ;
+  ef:mmBtupershortton "0.000485"^^xsd:string ;
+  rdfs:label "Landfill Gas"^^xsd:string ;
+.
+ef:LigniteCoal
+  rdf:type ef:MyClass ;
+  ef:Fuel "Lignite Coal"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "156"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "23"^^xsd:string ;
+  ef:kgCO2permmBtu "97.72"^^xsd:string ;
+  ef:kgCO2pershortton "1,389"^^xsd:string ;
+  ef:mmBtupershortton "14.21"^^xsd:string ;
+  rdfs:label "Lignite Coal"^^xsd:string ;
+.
+ef:LiquefiedPetroleumGasesLPG
+  rdf:type ef:MyClass ;
+  ef:Fuel "Liquefied Petroleum Gases (LPG)"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.28"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.06"^^xsd:string ;
+  ef:kgCO2permmBtu "61.71"^^xsd:string ;
+  ef:kgCO2pershortton "5.68"^^xsd:string ;
+  ef:mmBtupershortton "0.092"^^xsd:string ;
+  rdfs:label "Liquefied Petroleum Gases (LPG)"^^xsd:string ;
+.
+ef:Lubricants
+  rdf:type ef:MyClass ;
+  ef:Fuel "Lubricants"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.43"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "74.27"^^xsd:string ;
+  ef:kgCO2pershortton "10.69"^^xsd:string ;
+  ef:mmBtupershortton "0.144"^^xsd:string ;
+  rdfs:label "Lubricants"^^xsd:string ;
+.
+ef:MixedCommercialSector
+  rdf:type ef:MyClass ;
+  ef:Fuel "Mixed (Commercial Sector)"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "235"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "34"^^xsd:string ;
+  ef:kgCO2permmBtu "94.27"^^xsd:string ;
+  ef:kgCO2pershortton "2,016"^^xsd:string ;
+  ef:mmBtupershortton "21.39"^^xsd:string ;
+  rdfs:label "Mixed (Commercial Sector)"^^xsd:string ;
+.
+ef:MixedElectricPowerSector
+  rdf:type ef:MyClass ;
+  ef:Fuel "Mixed (Electric Power Sector)"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "217"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "32"^^xsd:string ;
+  ef:kgCO2permmBtu "95.52"^^xsd:string ;
+  ef:kgCO2pershortton "1,885"^^xsd:string ;
+  ef:mmBtupershortton "19.73"^^xsd:string ;
+  rdfs:label "Mixed (Electric Power Sector)"^^xsd:string ;
+.
+ef:MixedIndustrialCoking
+  rdf:type ef:MyClass ;
+  ef:Fuel "Mixed (Industrial Coking)"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "289"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "42"^^xsd:string ;
+  ef:kgCO2permmBtu "93.9"^^xsd:string ;
+  ef:kgCO2pershortton "2,468"^^xsd:string ;
+  ef:mmBtupershortton "26.28"^^xsd:string ;
+  rdfs:label "Mixed (Industrial Coking)"^^xsd:string ;
+.
+ef:MixedIndustrialSector
+  rdf:type ef:MyClass ;
+  ef:Fuel "Mixed (Industrial Sector)"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "246"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "36"^^xsd:string ;
+  ef:kgCO2permmBtu "94.67"^^xsd:string ;
+  ef:kgCO2pershortton "2,116"^^xsd:string ;
+  ef:mmBtupershortton "22.35"^^xsd:string ;
+  rdfs:label "Mixed (Industrial Sector)"^^xsd:string ;
+.
+ef:MotorGasoline
+  rdf:type ef:MyClass ;
+  ef:Fuel "Motor Gasoline"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.38"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "70.22"^^xsd:string ;
+  ef:kgCO2pershortton "8.78"^^xsd:string ;
+  ef:mmBtupershortton "0.125"^^xsd:string ;
+  rdfs:label "Motor Gasoline"^^xsd:string ;
+.
+ef:MunicipalSolidWaste
+  rdf:type ef:MyClass ;
+  ef:Fuel "Municipal Solid Waste"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "318"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "42"^^xsd:string ;
+  ef:kgCO2permmBtu "90.7"^^xsd:string ;
+  ef:kgCO2pershortton "902"^^xsd:string ;
+  ef:mmBtupershortton "9.95"^^xsd:string ;
+  rdfs:label "Municipal Solid Waste"^^xsd:string ;
+.
+ef:MyClass
+  rdf:type owl:Class ;
+.
+ef:Naphtha401degF
+  rdf:type ef:MyClass ;
+  ef:Fuel "Naphtha (<401 deg F)"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.38"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "68.02"^^xsd:string ;
+  ef:kgCO2pershortton "8.5"^^xsd:string ;
+  ef:mmBtupershortton "0.125"^^xsd:string ;
+  rdfs:label "Naphtha (<401 deg F)"^^xsd:string ;
+.
+ef:NaturalGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Natural Gas"^^xsd:string ;
+  rdfs:label "Natural Gas"^^xsd:string ;
+.
+ef:NaturalGas0
+  rdf:type ef:MyClass ;
+  ef:Fuel "Natural Gas"^^xsd:string ;
+  ef:gCH4permmBtu "1"^^xsd:string ;
+  ef:gCH4pershortton "0.00103"^^xsd:string ;
+  ef:gN2OpermmBtu "0.1"^^xsd:string ;
+  ef:gN2Opershortton "0.0001"^^xsd:string ;
+  ef:kgCO2permmBtu "53.06"^^xsd:string ;
+  ef:kgCO2pershortton "0.05444"^^xsd:string ;
+  ef:mmBtupershortton "0.001026"^^xsd:string ;
+  rdfs:label "Natural Gas"^^xsd:string ;
+.
+ef:NaturalGasoline
+  rdf:type ef:MyClass ;
+  ef:Fuel "Natural Gasoline"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.33"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.07"^^xsd:string ;
+  ef:kgCO2permmBtu "66.88"^^xsd:string ;
+  ef:kgCO2pershortton "7.36"^^xsd:string ;
+  ef:mmBtupershortton "0.11"^^xsd:string ;
+  rdfs:label "Natural Gasoline"^^xsd:string ;
+.
+ef:NorthAmericanHardwood
+  rdf:type ef:MyClass ;
+  ef:Fuel "North American Hardwood"^^xsd:string ;
+  ef:gCH4permmBtu "1.9"^^xsd:string ;
+  ef:gN2OpermmBtu "0.42"^^xsd:string ;
+  ef:kgCO2permmBtu "93.7"^^xsd:string ;
+  rdfs:label "North American Hardwood"^^xsd:string ;
+.
+ef:NorthAmericanSoftwood
+  rdf:type ef:MyClass ;
+  ef:Fuel "North American Softwood"^^xsd:string ;
+  ef:gCH4permmBtu "1.9"^^xsd:string ;
+  ef:gN2OpermmBtu "0.42"^^xsd:string ;
+  ef:kgCO2permmBtu "94.4"^^xsd:string ;
+  rdfs:label "North American Softwood"^^xsd:string ;
+.
+ef:OtherBiomassGases
+  rdf:type ef:MyClass ;
+  ef:Fuel "Other Biomass Gases"^^xsd:string ;
+  ef:gCH4permmBtu "3.2"^^xsd:string ;
+  ef:gCH4pershortton "0.002096"^^xsd:string ;
+  ef:gN2OpermmBtu "0.63"^^xsd:string ;
+  ef:gN2Opershortton "0.000413"^^xsd:string ;
+  ef:kgCO2permmBtu "52.07"^^xsd:string ;
+  ef:kgCO2pershortton "0.034106"^^xsd:string ;
+  ef:mmBtupershortton "0.000655"^^xsd:string ;
+  rdfs:label "Other Biomass Gases"^^xsd:string ;
+.
+ef:OtherOil401degF
+  rdf:type ef:MyClass ;
+  ef:Fuel "Other Oil (>401 deg F)"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.42"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "76.22"^^xsd:string ;
+  ef:kgCO2pershortton "10.59"^^xsd:string ;
+  ef:mmBtupershortton "0.139"^^xsd:string ;
+  rdfs:label "Other Oil (>401 deg F)"^^xsd:string ;
+.
+ef:Peat
+  rdf:type ef:MyClass ;
+  ef:Fuel "Peat"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "256"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "34"^^xsd:string ;
+  ef:kgCO2permmBtu "111.84"^^xsd:string ;
+  ef:kgCO2pershortton "895"^^xsd:string ;
+  ef:mmBtupershortton "8"^^xsd:string ;
+  rdfs:label "Peat"^^xsd:string ;
+.
+ef:PentanesPlus
+  rdf:type ef:MyClass ;
+  ef:Fuel "Pentanes Plus"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.33"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.07"^^xsd:string ;
+  ef:kgCO2permmBtu "70.02"^^xsd:string ;
+  ef:kgCO2pershortton "7.7"^^xsd:string ;
+  ef:mmBtupershortton "0.11"^^xsd:string ;
+  rdfs:label "Pentanes Plus"^^xsd:string ;
+.
+ef:PetrochemicalFeedstocks
+  rdf:type ef:MyClass ;
+  ef:Fuel "Petrochemical Feedstocks"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.38"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "71.02"^^xsd:string ;
+  ef:kgCO2pershortton "8.88"^^xsd:string ;
+  ef:mmBtupershortton "0.125"^^xsd:string ;
+  rdfs:label "Petrochemical Feedstocks"^^xsd:string ;
+.
+ef:PetroleumCoke
+  rdf:type ef:MyClass ;
+  ef:Fuel "Petroleum Coke"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.43"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "102.41"^^xsd:string ;
+  ef:kgCO2pershortton "14.64"^^xsd:string ;
+  ef:mmBtupershortton "0.143"^^xsd:string ;
+  rdfs:label "Petroleum Coke"^^xsd:string ;
+.
+ef:PetroleumCokeSolid
+  rdf:type ef:MyClass ;
+  ef:Fuel "Petroleum Coke (Solid)"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "960"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "126"^^xsd:string ;
+  ef:kgCO2permmBtu "102.41"^^xsd:string ;
+  ef:kgCO2pershortton "3,072"^^xsd:string ;
+  ef:mmBtupershortton "30"^^xsd:string ;
+  rdfs:label "Petroleum Coke (Solid)"^^xsd:string ;
+.
+ef:PetroleumProducts
+  rdf:type ef:MyClass ;
+  ef:Fuel "Petroleum Products"^^xsd:string ;
+  rdfs:label "Petroleum Products"^^xsd:string ;
+.
+ef:Plastics
+  rdf:type ef:MyClass ;
+  ef:Fuel "Plastics"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "1,216"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "160"^^xsd:string ;
+  ef:kgCO2permmBtu "75"^^xsd:string ;
+  ef:kgCO2pershortton "2,850"^^xsd:string ;
+  ef:mmBtupershortton "38"^^xsd:string ;
+  rdfs:label "Plastics"^^xsd:string ;
+.
+ef:Propane
+  rdf:type ef:MyClass ;
+  ef:Fuel "Propane"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.27"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.05"^^xsd:string ;
+  ef:kgCO2permmBtu "62.87"^^xsd:string ;
+  ef:kgCO2pershortton "5.72"^^xsd:string ;
+  ef:mmBtupershortton "0.091"^^xsd:string ;
+  rdfs:label "Propane"^^xsd:string ;
+.
+ef:PropaneGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Propane Gas"^^xsd:string ;
+  ef:gCH4permmBtu "0.022"^^xsd:string ;
+  ef:gCH4pershortton "0.000055"^^xsd:string ;
+  ef:gN2OpermmBtu "0.1"^^xsd:string ;
+  ef:gN2Opershortton "0.000252"^^xsd:string ;
+  ef:kgCO2permmBtu "61.46"^^xsd:string ;
+  ef:kgCO2pershortton "0.15463"^^xsd:string ;
+  ef:mmBtupershortton "0.002516"^^xsd:string ;
+  rdfs:label "Propane Gas"^^xsd:string ;
+.
+ef:Propylene
+  rdf:type ef:MyClass ;
+  ef:Fuel "Propylene"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.27"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.05"^^xsd:string ;
+  ef:kgCO2permmBtu "65.95"^^xsd:string ;
+  ef:kgCO2pershortton "6"^^xsd:string ;
+  ef:mmBtupershortton "0.091"^^xsd:string ;
+  rdfs:label "Propylene"^^xsd:string ;
+.
+ef:RenderedAnimalFat
+  rdf:type ef:MyClass ;
+  ef:Fuel "Rendered Animal Fat"^^xsd:string ;
+  ef:gCH4permmBtu "1.1"^^xsd:string ;
+  ef:gCH4pershortton "0.14"^^xsd:string ;
+  ef:gN2OpermmBtu "0.11"^^xsd:string ;
+  ef:gN2Opershortton "0.01"^^xsd:string ;
+  ef:kgCO2permmBtu "71.06"^^xsd:string ;
+  ef:kgCO2pershortton "8.88"^^xsd:string ;
+  ef:mmBtupershortton "0.125"^^xsd:string ;
+  rdfs:label "Rendered Animal Fat"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015#ResidualFuelOilNo.5>
+  rdf:type ef:MyClass ;
+  ef:Fuel "Residual Fuel Oil No. 5"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.42"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "72.93"^^xsd:string ;
+  ef:kgCO2pershortton "10.21"^^xsd:string ;
+  ef:mmBtupershortton "0.14"^^xsd:string ;
+  rdfs:label "Residual Fuel Oil No. 5"^^xsd:string ;
+.
+<http://www.epa.gov/emission-factors_nov_2015#ResidualFuelOilNo.6>
+  rdf:type ef:MyClass ;
+  ef:Fuel "Residual Fuel Oil No. 6"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.45"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "75.1"^^xsd:string ;
+  ef:kgCO2pershortton "11.27"^^xsd:string ;
+  ef:mmBtupershortton "0.15"^^xsd:string ;
+  rdfs:label "Residual Fuel Oil No. 6"^^xsd:string ;
+.
+ef:SolidByproducts
+  rdf:type ef:MyClass ;
+  ef:Fuel "Solid Byproducts"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "332"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "44"^^xsd:string ;
+  ef:kgCO2permmBtu "105.51"^^xsd:string ;
+  ef:kgCO2pershortton "1,096"^^xsd:string ;
+  ef:mmBtupershortton "10.39"^^xsd:string ;
+  rdfs:label "Solid Byproducts"^^xsd:string ;
+.
+ef:SpecialNaphtha
+  rdf:type ef:MyClass ;
+  ef:Fuel "Special Naphtha"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.38"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "72.34"^^xsd:string ;
+  ef:kgCO2pershortton "9.04"^^xsd:string ;
+  ef:mmBtupershortton "0.125"^^xsd:string ;
+  rdfs:label "Special Naphtha"^^xsd:string ;
+.
+ef:StillGas
+  rdf:type ef:MyClass ;
+  ef:Fuel "Still Gas"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.43"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.09"^^xsd:string ;
+  ef:kgCO2permmBtu "66.72"^^xsd:string ;
+  ef:kgCO2pershortton "9.54"^^xsd:string ;
+  ef:mmBtupershortton "0.143"^^xsd:string ;
+  rdfs:label "Still Gas"^^xsd:string ;
+.
+ef:Straw
+  rdf:type ef:MyClass ;
+  ef:Fuel "Straw"^^xsd:string ;
+  ef:gCH4permmBtu "1.9"^^xsd:string ;
+  ef:gN2OpermmBtu "0.42"^^xsd:string ;
+  ef:kgCO2permmBtu "95.1"^^xsd:string ;
+  rdfs:label "Straw"^^xsd:string ;
+.
+ef:Sub-bituminousCoal
+  rdf:type ef:MyClass ;
+  ef:Fuel "Sub-bituminous Coal"^^xsd:string ;
+  ef:gCH4permmBtu "11"^^xsd:string ;
+  ef:gCH4pershortton "190"^^xsd:string ;
+  ef:gN2OpermmBtu "1.6"^^xsd:string ;
+  ef:gN2Opershortton "28"^^xsd:string ;
+  ef:kgCO2permmBtu "97.17"^^xsd:string ;
+  ef:kgCO2pershortton "1,676"^^xsd:string ;
+  ef:mmBtupershortton "17.25"^^xsd:string ;
+  rdfs:label "Sub-bituminous Coal"^^xsd:string ;
+.
+ef:Tires
+  rdf:type ef:MyClass ;
+  ef:Fuel "Tires"^^xsd:string ;
+  ef:gCH4permmBtu "32"^^xsd:string ;
+  ef:gCH4pershortton "896"^^xsd:string ;
+  ef:gN2OpermmBtu "4.2"^^xsd:string ;
+  ef:gN2Opershortton "118"^^xsd:string ;
+  ef:kgCO2permmBtu "85.97"^^xsd:string ;
+  ef:kgCO2pershortton "2,407"^^xsd:string ;
+  ef:mmBtupershortton "28"^^xsd:string ;
+  rdfs:label "Tires"^^xsd:string ;
+.
+ef:UnfinishedOils
+  rdf:type ef:MyClass ;
+  ef:Fuel "Unfinished Oils"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.42"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "74.54"^^xsd:string ;
+  ef:kgCO2pershortton "10.36"^^xsd:string ;
+  ef:mmBtupershortton "0.139"^^xsd:string ;
+  rdfs:label "Unfinished Oils"^^xsd:string ;
+.
+ef:UsedOil
+  rdf:type ef:MyClass ;
+  ef:Fuel "Used Oil"^^xsd:string ;
+  ef:gCH4permmBtu "3"^^xsd:string ;
+  ef:gCH4pershortton "0.41"^^xsd:string ;
+  ef:gN2OpermmBtu "0.6"^^xsd:string ;
+  ef:gN2Opershortton "0.08"^^xsd:string ;
+  ef:kgCO2permmBtu "74"^^xsd:string ;
+  ef:kgCO2pershortton "10.21"^^xsd:string ;
+  ef:mmBtupershortton "0.138"^^xsd:string ;
+  rdfs:label "Used Oil"^^xsd:string ;
+.
+ef:VegetableOil
+  rdf:type ef:MyClass ;
+  ef:Fuel "Vegetable Oil"^^xsd:string ;
+  ef:gCH4permmBtu "1.1"^^xsd:string ;
+  ef:gCH4pershortton "0.13"^^xsd:string ;
+  ef:gN2OpermmBtu "0.11"^^xsd:string ;
+  ef:gN2Opershortton "0.01"^^xsd:string ;
+  ef:kgCO2permmBtu "81.55"^^xsd:string ;
+  ef:kgCO2pershortton "9.79"^^xsd:string ;
+  ef:mmBtupershortton "0.12"^^xsd:string ;
+  rdfs:label "Vegetable Oil"^^xsd:string ;
+.
+ef:WoodandWoodResiduals
+  rdf:type ef:MyClass ;
+  ef:Fuel "Wood and Wood Residuals"^^xsd:string ;
+  ef:gCH4permmBtu "7.2"^^xsd:string ;
+  ef:gCH4pershortton "126"^^xsd:string ;
+  ef:gN2OpermmBtu "3.6"^^xsd:string ;
+  ef:gN2Opershortton "63"^^xsd:string ;
+  ef:kgCO2permmBtu "93.8"^^xsd:string ;
+  ef:kgCO2pershortton "1,640"^^xsd:string ;
+  ef:mmBtupershortton "17.48"^^xsd:string ;
+  rdfs:label "Wood and Wood Residuals"^^xsd:string ;
+.
+ef:emissionType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "emission type"^^xsd:string ;
+.
+ef:emissionUnit
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "emission unit"^^xsd:string ;
+  rdfs:range qudt:Unit ;
+.
+ef:factor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "factor"^^xsd:string ;
+  rdfs:range xsd:decimal ;
+.
+ef:fuelType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Fuel type"^^xsd:string ;
+.
+ef:fuelUnit
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "fuel unit"^^xsd:string ;
+  rdfs:range qudt:Unit ;
+.
+ef:gCH4permmBtu
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "g CH4 per mmBtu"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:gCH4pershortton
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "g CH4 per short ton"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:gN2OpermmBtu
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "g N2O per mmBtu"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:gN2Opershortton
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "g N2O per short ton"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:kgCO2permmBtu
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "kg CO2 per mmBtu"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:kgCO2pershortton
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "kg CO2 per short ton"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+ef:mmBtupershortton
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ef:MyClass ;
+  rdfs:label "mmBtu per short ton"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.02524"^^xsd:string ;
+  ef:fuelType "Blast Furnace Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.025254"^^xsd:string ;
+  ef:fuelType "Landfill Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.02806"^^xsd:string ;
+  ef:fuelType "Coke Oven Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.034106"^^xsd:string ;
+  ef:fuelType "Other Biomass Gases"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.05444"^^xsd:string ;
+  ef:fuelType "Natural Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.08189"^^xsd:string ;
+  ef:fuelType "Fuel Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "0.15463"^^xsd:string ;
+  ef:fuelType "Propane Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "1,096"^^xsd:string ;
+  ef:fuelType "Solid Byproducts"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "1,389"^^xsd:string ;
+  ef:fuelType "Lignite Coal"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "1,640"^^xsd:string ;
+  ef:fuelType "Wood and Wood Residuals"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "1,676"^^xsd:string ;
+  ef:fuelType "Sub-bituminous Coal"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "1,885"^^xsd:string ;
+  ef:fuelType "Mixed (Electric Power Sector)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.15"^^xsd:string ;
+  ef:fuelType "Kerosene"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.18"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 1"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.21"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 2"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.21"^^xsd:string ;
+  ef:fuelType "Residual Fuel Oil No. 5"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.21"^^xsd:string ;
+  ef:fuelType "Used Oil"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.29"^^xsd:string ;
+  ef:fuelType "Crude Oil"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.36"^^xsd:string ;
+  ef:fuelType "Unfinished Oils"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.59"^^xsd:string ;
+  ef:fuelType "Other Oil (>401 deg F)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.69"^^xsd:string ;
+  ef:fuelType "Lubricants"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "10.96"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 4"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "102.41"^^xsd:string ;
+  ef:fuelType "Petroleum Coke (Solid)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "102.41"^^xsd:string ;
+  ef:fuelType "Petroleum Coke"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "103.69"^^xsd:string ;
+  ef:fuelType "Anthracite Coal"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "105.51"^^xsd:string ;
+  ef:fuelType "Solid Byproducts"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "11.09"^^xsd:string ;
+  ef:fuelType "Heavy Gas Oils"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "11.27"^^xsd:string ;
+  ef:fuelType "Residual Fuel Oil No. 6"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "11.91"^^xsd:string ;
+  ef:fuelType "Asphalt and Road Oil"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "111.84"^^xsd:string ;
+  ef:fuelType "Peat"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "113.67"^^xsd:string ;
+  ef:fuelType "Coal Coke"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "118.17"^^xsd:string ;
+  ef:fuelType "Agricultural Byproducts"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "14.64"^^xsd:string ;
+  ef:fuelType "Petroleum Coke"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,016"^^xsd:string ;
+  ef:fuelType "Mixed (Commercial Sector)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,116"^^xsd:string ;
+  ef:fuelType "Mixed (Industrial Sector)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,325"^^xsd:string ;
+  ef:fuelType "Bituminous Coal"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,407"^^xsd:string ;
+  ef:fuelType "Tires"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,468"^^xsd:string ;
+  ef:fuelType "Mixed (Industrial Coking)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,602"^^xsd:string ;
+  ef:fuelType "Anthracite Coal"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,819"^^xsd:string ;
+  ef:fuelType "Coal Coke"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "2,850"^^xsd:string ;
+  ef:fuelType "Plastics"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "274.32"^^xsd:string ;
+  ef:fuelType "Blast Furnace Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "3,072"^^xsd:string ;
+  ef:fuelType "Petroleum Coke (Solid)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "3.83"^^xsd:string ;
+  ef:fuelType "Ethylene"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "4.05"^^xsd:string ;
+  ef:fuelType "Ethane"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "46.85"^^xsd:string ;
+  ef:fuelType "Coke Oven Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "5.68"^^xsd:string ;
+  ef:fuelType "Liquefied Petroleum Gases (LPG)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "5.72"^^xsd:string ;
+  ef:fuelType "Propane"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "5.75"^^xsd:string ;
+  ef:fuelType "Ethanol (100%)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "52.07"^^xsd:string ;
+  ef:fuelType "Landfill Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "52.07"^^xsd:string ;
+  ef:fuelType "Other Biomass Gases"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "53.06"^^xsd:string ;
+  ef:fuelType "Natural Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "59"^^xsd:string ;
+  ef:fuelType "Fuel Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "59.6"^^xsd:string ;
+  ef:fuelType "Ethane"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "6"^^xsd:string ;
+  ef:fuelType "Propylene"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "6.43"^^xsd:string ;
+  ef:fuelType "Isobutane"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "6.67"^^xsd:string ;
+  ef:fuelType "Butane"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "61.46"^^xsd:string ;
+  ef:fuelType "Propane Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "61.71"^^xsd:string ;
+  ef:fuelType "Liquefied Petroleum Gases (LPG)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "62.87"^^xsd:string ;
+  ef:fuelType "Propane"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "64.77"^^xsd:string ;
+  ef:fuelType "Butane"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "64.94"^^xsd:string ;
+  ef:fuelType "Isobutane"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "65.95"^^xsd:string ;
+  ef:fuelType "Propylene"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "65.96"^^xsd:string ;
+  ef:fuelType "Ethylene"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "66.72"^^xsd:string ;
+  ef:fuelType "Still Gas"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "66.88"^^xsd:string ;
+  ef:fuelType "Natural Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "68.02"^^xsd:string ;
+  ef:fuelType "Naphtha (<401 deg F)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "68.44"^^xsd:string ;
+  ef:fuelType "Ethanol (100%)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "68.72"^^xsd:string ;
+  ef:fuelType "Butylene"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "68.86"^^xsd:string ;
+  ef:fuelType "Isobutylene"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "69.25"^^xsd:string ;
+  ef:fuelType "Aviation Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "7.09"^^xsd:string ;
+  ef:fuelType "Isobutylene"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "7.22"^^xsd:string ;
+  ef:fuelType "Butylene"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "7.36"^^xsd:string ;
+  ef:fuelType "Natural Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "7.7"^^xsd:string ;
+  ef:fuelType "Pentanes Plus"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "70.02"^^xsd:string ;
+  ef:fuelType "Pentanes Plus"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "70.22"^^xsd:string ;
+  ef:fuelType "Motor Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "71.02"^^xsd:string ;
+  ef:fuelType "Petrochemical Feedstocks"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "71.06"^^xsd:string ;
+  ef:fuelType "Rendered Animal Fat"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "72.22"^^xsd:string ;
+  ef:fuelType "Kerosene-Type Jet Fuel"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "72.34"^^xsd:string ;
+  ef:fuelType "Special Naphtha"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "72.93"^^xsd:string ;
+  ef:fuelType "Residual Fuel Oil No. 5"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "73.25"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 1"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "73.84"^^xsd:string ;
+  ef:fuelType "Biodiesel (100%)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "73.96"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 2"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "74"^^xsd:string ;
+  ef:fuelType "Used Oil"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "74.27"^^xsd:string ;
+  ef:fuelType "Lubricants"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "74.54"^^xsd:string ;
+  ef:fuelType "Crude Oil"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "74.54"^^xsd:string ;
+  ef:fuelType "Unfinished Oils"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "74.92"^^xsd:string ;
+  ef:fuelType "Heavy Gas Oils"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "75"^^xsd:string ;
+  ef:fuelType "Plastics"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "75.04"^^xsd:string ;
+  ef:fuelType "Distillate Fuel Oil No. 4"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "75.1"^^xsd:string ;
+  ef:fuelType "Residual Fuel Oil No. 6"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "75.2"^^xsd:string ;
+  ef:fuelType "Kerosene"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "75.36"^^xsd:string ;
+  ef:fuelType "Asphalt and Road Oil"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "76.22"^^xsd:string ;
+  ef:fuelType "Other Oil (>401 deg F)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "8.31"^^xsd:string ;
+  ef:fuelType "Aviation Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "8.5"^^xsd:string ;
+  ef:fuelType "Naphtha (<401 deg F)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "8.78"^^xsd:string ;
+  ef:fuelType "Motor Gasoline"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "8.88"^^xsd:string ;
+  ef:fuelType "Petrochemical Feedstocks"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "8.88"^^xsd:string ;
+  ef:fuelType "Rendered Animal Fat"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "81.55"^^xsd:string ;
+  ef:fuelType "Vegetable Oil"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "85.97"^^xsd:string ;
+  ef:fuelType "Tires"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "895"^^xsd:string ;
+  ef:fuelType "Peat"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "9.04"^^xsd:string ;
+  ef:fuelType "Special Naphtha"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "9.45"^^xsd:string ;
+  ef:fuelType "Biodiesel (100%)"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "9.54"^^xsd:string ;
+  ef:fuelType "Still Gas"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "9.75"^^xsd:string ;
+  ef:fuelType "Kerosene-Type Jet Fuel"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "9.79"^^xsd:string ;
+  ef:fuelType "Vegetable Oil"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "90.7"^^xsd:string ;
+  ef:fuelType "Municipal Solid Waste"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "902"^^xsd:string ;
+  ef:fuelType "Municipal Solid Waste"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "93.28"^^xsd:string ;
+  ef:fuelType "Bituminous Coal"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "93.8"^^xsd:string ;
+  ef:fuelType "Wood and Wood Residuals"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "93.9"^^xsd:string ;
+  ef:fuelType "Mixed (Industrial Coking)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "94.27"^^xsd:string ;
+  ef:fuelType "Mixed (Commercial Sector)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "94.67"^^xsd:string ;
+  ef:fuelType "Mixed (Industrial Sector)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "95.52"^^xsd:string ;
+  ef:fuelType "Mixed (Electric Power Sector)"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "97.17"^^xsd:string ;
+  ef:fuelType "Sub-bituminous Coal"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "97.72"^^xsd:string ;
+  ef:fuelType "Lignite Coal"^^xsd:string ;
+  ef:fuelUnit <http://www.epa.gov/discoverytool#mmBtu> ;
+].
+[
+  rdf:type ef:Factor ;
+  ef:emissionType "CO2" ;
+  ef:emissionUnit <http://qudt.org/vocab/unit#Kilogram> ;
+  ef:factor "975"^^xsd:string ;
+  ef:fuelType "Agricultural Byproducts"^^xsd:string ;
+  ef:fuelUnit <http://qudt.org/vocab/unit#TonShort> ;
+].
