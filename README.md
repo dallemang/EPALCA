@@ -17,7 +17,7 @@ I have committed the entire project to github.  This means that when you check i
 
 6. Because the tool uses the FRS_XWALK TDB, which is made up of files too big for github, you'll have to get these files elsewhere, e.g., https://www.dropbox.com/sh/btqxfnplxrpx5xb/AADtp0U98O2D8C7r5Obnmp-Ra?dl=0
 
-7. Copy the entire directory FRS_XWALK.tdb.data to your workspace, at the top level. Double-clickon FRS_XWALK.tdb to make sure TopBraid found it correctly. 
+7. Copy the entire directory FRS_XWALK.tdb.data to your workspace, in the www.epa.gov project that you just created. Double-clickon FRS_XWALK.tdb to make sure TopBraid found it correctly. 
 
 ## Run the tool
 
